@@ -15,7 +15,7 @@ head(read.csv(files[3]))
 files_full <- list.files("specdata", full.names=TRUE)
 head(read.csv(files_full[3]))
 #Part 1
-pollutantmean<-function(directory,pollutant,id){
+pollutantmean<-function(directory,pollutant,id=1:332){
         files_list <- list.files(directory, full.names=TRUE)
         dat<-data.frame()
         for (i in id){
